@@ -12,6 +12,7 @@ def get_info():
     while True:
         line = read_file.readline()
         if len(line)==0:
+            read_file.close()
             break
         else:
             split_line = line.split(" ")
