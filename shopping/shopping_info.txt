@@ -1,0 +1,8 @@
+notebook 10
+iphone 5000
+Mac 8000
+python-book 40
+meal 200
+coffee 80
+water 2
+xbox 300
