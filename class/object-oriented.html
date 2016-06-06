@@ -1,0 +1,17 @@
+python 是面向对象的语言。
+
+1. 类的方法与普通的函数只有一个特别的区别————它们必须有一个额外的第一个参数名称，但是调用这个方法的时候你不为这个参数赋值，Python会提供这个值。这个特别的变量指对象本身，按照惯例它的名称是self。
+
+note: 如你有一个类称为MyClass和这个类的一个实例MyObject。当你调用这个对象的方法MyObject.method(arg1, arg2)的时候，还会由Python自动转为MyClass.method(MyObject, arg1, arg2)
+
+2.__init__ 初始化
+该函数主要用来是对实体进行初始化
+class Dog:
+    def __init__(self, name):
+        self.DogName = name #必须赋值self, 否则类中其他的函数无法调用
+
+    def bark(self):
+        print("What xxxxx!")
+
+D = Dog('Same')
+D.bark()
