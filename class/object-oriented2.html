@@ -1,0 +1,30 @@
+类的继承
+
+class Person: #父类
+    def __init__(self, Type, Sex, Age, Name):
+        self.race = Type
+        self.sex = Sex
+        self.age = Age
+        self.name = Name
+    
+    def talk(self, msg = 0):
+        self.msg = msg
+        if self.msg != 0:
+            print self.name, 'Saying:', self.msg
+
+
+class person_info(Person):子类
+    def __init__(self, Type, Sex, Age, Name, nation, work, salary):
+        Person.__init__(self, Type, Sex, Age, Name)
+        self.country = nation
+        self.job = work
+        self.salary = salary
+
+    def tell(self, msg):
+        print'''%s' person information:
+            Name:%s
+            Age:%s
+            Nation:%s
+            Work:%s
+            '''%(self.name, self.name, self.age, self.country, self.job)
+
