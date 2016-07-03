@@ -10,6 +10,7 @@ def insert_info():
     curs.execute('insert into user values(10, \'Peter\')')
     curs.execute('insert into user values(11, \'Purple\')')
     curs.execute('insert into user values(12, \'Green\')')
+    curs.execute('insert into user values(13, \'Green\')')
     curs.close()
     connect.commit()
     connect.close()
